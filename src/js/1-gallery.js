@@ -101,7 +101,7 @@ listGallery.addEventListener('click', event => {
   }
 });
 
-const lightbox = new SimpleLightbox('.gallery', {
+const lightbox = new SimpleLightbox('.gallery a', {
   capionData: 'alt',
   captionDelay: 250,
 });
