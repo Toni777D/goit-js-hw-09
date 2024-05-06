@@ -99,9 +99,9 @@ listGallery.addEventListener('click', event => {
     const largeImgSrc = event.target.dataset.source;
     console.log(largeImgSrc);
   }
-});
 
-const lightbox = new SimpleLightbox('.gallery a', {
-  capionData: 'alt',
-  captionDelay: 250,
+  const lightbox = new SimpleLightbox('.gallery a', {
+    capionData: 'alt',
+    captionDelay: 250,
+  });
 });
