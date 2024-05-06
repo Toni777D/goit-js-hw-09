@@ -1,5 +1,5 @@
 // Описаний в документації
-import { SimpleLightbox } from 'simplelightbox';
+import { SimpleLightbox } from '/simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
@@ -101,7 +101,7 @@ listGallery.addEventListener('click', event => {
   }
 });
 
-const lightbox = new SimpleLightbox('.gallery a', {
+const lightbox = new SimpleLightbox('.gallery', {
   capionData: 'alt',
   captionDelay: 250,
 });
