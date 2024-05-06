@@ -93,13 +93,13 @@ function createMarkup(images) {
 
 listGallery.insertAdjacentHTML('afterbegin', createMarkup(images));
 
-listGallery.addEventListener('click', event => {
-  event.preventDefault();
-  if (event.target.nodeName === 'IMG') {
-    const largeImgSrc = event.target.dataset.source;
-    console.log(largeImgSrc);
-  }
-});
+// listGallery.addEventListener('click', event => {
+//   event.preventDefault();
+//   if (event.target.nodeName === 'IMG') {
+//     const largeImgSrc = event.target.dataset.source;
+//     console.log(largeImgSrc);
+//   }
+// });
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
