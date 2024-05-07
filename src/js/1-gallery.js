@@ -91,17 +91,9 @@ function createMarkup(images) {
     .join('');
 }
 
-listGallery.insertAdjacentHTML('afterbegin', createMarkup(images));
+listGallery.insertAdjacentHTML('afterbegin', galleryMarcup);
 
-listGallery.addEventListener('click', event => {
-  event.preventDefault();
-  if (event.target.nodeName === 'IMG') {
-    const largeImgSrc = event.target.dataset.source;
-    console.log(largeImgSrc);
-  }
-});
-
-const lightbox = new SimpleLightbox('.gallery a', {
+const lightbox = new SimpleLightbox('.gallery', {
   captionsData: 'alt',
   captionDelay: 250,
 });
