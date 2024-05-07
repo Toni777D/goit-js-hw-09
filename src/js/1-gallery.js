@@ -1,5 +1,5 @@
 // Описаний в документації
-import { SimpleLightbox } from 'simplelightbox';
+import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
@@ -93,7 +93,7 @@ function createMarkup(images) {
 
 listGallery.insertAdjacentHTML('afterbegin', galleryMarcup);
 
-const lightbox = new SimpleLightbox('.gallery', {
+const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
